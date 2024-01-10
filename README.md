@@ -1,4 +1,4 @@
-# Task2 - Node.js and React Project
+# Task2 - Contact form with Signup And Login using NodeJs, HTML and MongoDB
 
 This repository contains the source code for a simple Node.js backend and React frontend project. The application includes features like user authentication, a contact form, and user management.
 
