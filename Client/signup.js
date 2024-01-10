@@ -7,7 +7,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         password: document.getElementById('password').value
     };
 
-    fetch('http://localhost:3000/auth/signup', {
+    fetch('https://task2-backend-contactform.onrender.com/auth/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
