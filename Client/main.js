@@ -47,7 +47,7 @@ function checkLoggedInUser() {
     console.log("Get token:", token);
     if (token) {
         // Verify the token on the server
-        fetch('http://localhost:3000/verifyToken', {
+        fetch('https://task2-backend-contactform.onrender.com/verifyToken', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
