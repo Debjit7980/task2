@@ -24,7 +24,11 @@ client.connect()
     .catch(err => console.error('Error connecting to MongoDB:', err));
 
 app.use(cors());
-
+const allowedOrigins=['https://task2-contact-form.onrender.com','http://localhost:3000'];
+app.use(cors({
+    origin: allowedOrigins ,  // Replace with your client's actual origin
+    credentials: true,
+}));
 
 
 const generateAuthToken = async (userId) => {
