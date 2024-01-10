@@ -18,7 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         message: document.getElementById('message').value
     };
 
-    fetch('http://127.0.0.1:3000/contact', {
+    fetch('https://task2-backend-contactform.onrender.com/contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
