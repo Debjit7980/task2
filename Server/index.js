@@ -90,7 +90,7 @@ const authenticate=async(req,res,next)=>{
 }
 
 // Signup route
-app.post('/auth/signup', async (req, res) => {
+app.post('/signup', async (req, res) => {
     try {
         // Access the database and userdetails collection
         const collection = client.db('task2').collection('userdetails');
@@ -116,7 +116,7 @@ app.post('/auth/signup', async (req, res) => {
 });
 
 // Login route
-app.post('/auth/login', async (req, res) => {
+app.post('/login', async (req, res) => {
     try {
         // Access the database and userdetails collection
         const collection = client.db('task2').collection('userdetails');
